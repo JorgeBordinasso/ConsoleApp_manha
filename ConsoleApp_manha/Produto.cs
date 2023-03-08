@@ -18,6 +18,16 @@ namespace ConsoleApp_manha
             Descricao = descricao;
             Valor = valor;
             
-        }    
+        }
+        
+        public string getId()
+        {
+            return Descricao;
+        }
+
+        public decimal getValor()
+        {
+            return Valor;
+        }
     }
 }
