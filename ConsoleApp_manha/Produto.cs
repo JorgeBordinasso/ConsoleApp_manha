@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_manha
 {
+   
     public class Produto
     {
-        public int Id;
-        public string Descricao;
-        public decimal Valor;
+        private int Id;
+        private string Descricao;
+        private decimal Valor;
 
         public Produto(int id, string descricao, decimal valor)
         {
@@ -45,4 +46,6 @@ namespace ConsoleApp_manha
             }
         }
     }
+
+   
 }
