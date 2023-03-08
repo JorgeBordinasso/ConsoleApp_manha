@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_manha
 {
-    internal class Produto
+    public class Produto
     {
+        public int Id;
+        public string Descricao;
+        public decimal Valor;
+
+        public Produto(int id, string descricao, decimal valor)
+        {
+            Id = id;
+            Descricao = descricao;
+            Valor = valor;
+            
+        }    
     }
 }
