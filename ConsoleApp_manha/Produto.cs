@@ -36,6 +36,11 @@ namespace ConsoleApp_manha
             Descricao = descricao;
         }
 
+        public void setValor(decimal valor)
+        {
+            Valor = valor;
+        }
+
 
         public void setId(int id)
         {
@@ -44,6 +49,10 @@ namespace ConsoleApp_manha
                 Id = id;
                 
             }
+        }
+        public int getId()
+        {
+            return Id;
         }
     }
 
