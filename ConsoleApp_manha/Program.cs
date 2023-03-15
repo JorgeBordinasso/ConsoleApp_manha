@@ -10,3 +10,19 @@ Console.WriteLine( p1.getDescricao() + " " + p1.getValor());
 p1.setValor(69.90M);
 p1.setDescricao("mouser gamer Razor");
 Console.WriteLine(p1.getDescricao() + " " + p1.getValor());
+
+Endereco e1 = new Endereco(
+    "Franciso Alguelli",
+    "218",
+    "15904136",
+    "Laranjeiras",
+    "Taquaritinga",
+    "SP");
+
+Cliente c1 = new Cliente(1, "Jorge", "16997777947", e1);
+Cliente c2 = new Cliente(2, "Pedro", "16997777948", e1);
+Cliente c3 = new Cliente(3, "Otavio", "16997777949", e1);
+Cliente c4 = new Cliente(4, "Olicio", "16997777950", e1 );
+
+Console.WriteLine(c1.getEndereco().getRua());
+c1.getEndereco().setRua("Prudente de Moraes");
