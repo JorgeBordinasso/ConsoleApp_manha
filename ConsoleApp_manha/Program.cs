@@ -26,3 +26,25 @@ Cliente c4 = new Cliente(4, "Olicio", "16997777950", e1 );
 
 Console.WriteLine(c1.getEndereco().getRua());
 c1.getEndereco().setRua("Prudente de Moraes");
+
+Carros car = new Carros();
+car.Marca = "VW";
+car.numeroPortas = 4;
+car.numeroRodas = 4;
+car.cor = "Vermelho";
+
+Aviao aviao = new Aviao();
+aviao.portasInternas = 50;
+aviao.numeroPortas = 1;
+aviao.numeroRodas = 3;
+aviao.cor = "Branco";
+aviao.quantidadeAcento = 500;
+aviao.PagaImposto = false;
+
+Bike bicicleta = new Bike();
+bicicleta.PagaImposto=false;
+
+Console.WriteLine(c1.getEndereco().EnderecoCompleto());
+
+Console.WriteLine(aviao.ExibirDados());
+Console.WriteLine(car.ExibirDados());
