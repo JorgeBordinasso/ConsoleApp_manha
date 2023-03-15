@@ -48,3 +48,19 @@ Console.WriteLine(c1.getEndereco().EnderecoCompleto());
 
 Console.WriteLine(aviao.ExibirDados());
 Console.WriteLine(car.ExibirDados());
+
+List<Veiculos> listaVeiculos = new List<Veiculos>();
+listaVeiculos.Add(aviao);
+listaVeiculos.Add(car);
+listaVeiculos.Add(bicicleta);
+
+List<Cliente> listaCliente = new List<Cliente>();
+listaCliente.Add(c1);
+listaCliente.Add(c2);
+listaCliente.Add(c3);
+listaCliente.Add(c4);
+
+foreach (var item in listaCliente)
+{
+    Console.WriteLine(item.getNome());
+}
